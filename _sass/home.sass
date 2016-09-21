@@ -1,13 +1,10 @@
 body
-  background: url("/img/mockup.jpg")
-  background-size: cover
-  opacity: 0.8
-  background-color: #f9f9f9
   margin: 50px
   min-height: 100vh
   height: 150vh
   font-family: "Lato","sans-serif"
   font-weight: 400
+  background-color: #F8F8F8
 
 .no-gutter
   padding-left: 0
@@ -109,7 +106,28 @@ body
         margin-left: 20px
         margin-right: 20px
 
-
+.content-container
+  .left-section
+    background-color: white
+    border-radius: 5px
+    .section-content
+      margin: 30px 0 40px
+      .section-title
+        color: #585858
+      .divider
+        margin-top: 15px
+        margin-bottom: 15px
+        border-top: 2px solid #eeeeee
+      .list-container
+        list-style: none
+        padding-left: 20px
+        .list-item
+          .checkbox
+            .list-label
+              color: #585858
+              padding-left: 5px
+  .right-section
+    height: 91vh
 
 #myModal
   .container
@@ -238,6 +256,62 @@ body
       color: #ffffff
       text-align: center
 
+.site-footer
+  color: white
+  border-radius: 5px
+  padding-top: 50px
+  padding-bottom: 100px
+  margin-left: 30px
+  margin-right: 30px
+  background-color: #a2db8e
+  .left-section
+    padding: 70px 80px 0
+    span
+      display: block
+      padding-top: 8px
+  .middle-section
+    img
+      display: block
+      margin-left: auto
+      margin-right: auto
+    span
+      display: block
+      padding: 30px 0 15px
+      text-align: center
+    input
+      padding-left: 15px
+      margin-left: auto
+      margin-right: auto
+      display: block
+      color: white
+      height: 45px
+      width: 350px
+      border: 0
+      border-radius: 30px
+      background-color: #ccebc1
+      outline: none
+      box-shadow: none
+      -webkit-appearance: none
+      &::-webkit-input-placeholder
+        color: white
+      &:-moz-placeholder  /* Firefox 18- */
+        color: white
+      &::-moz-placeholder  /* Firefox 19+ */
+        color: white
+      &:-ms-input-placeholder
+        color: white
+
+  .right-section
+    padding: 70px 80px 0
+    ul
+      float: right
+      list-style: none
+      padding-left: 0
+      padding-top: 47px
+      li
+        display: inline-block
+        &:nth-child(2)
+          padding: 0 25px
 
 
 

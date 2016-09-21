@@ -1,0 +1,14 @@
+- title: "Featured"
+  sort: "featured"
+
+- title: "Price: Low to High"
+  sort: "myorder:asc"
+
+- title: "Price: High to Low"
+  sort: "myorder:desc"
+
+- title: A - Z
+  sort: "myorder:asc"
+
+
+

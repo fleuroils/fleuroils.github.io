@@ -1,0 +1,34 @@
+<div class="section-content">
+    <h5 class="section-title">SORT BY</h5>
+    <hr class="divider"/>
+    <ul class="list-container">
+        {% for sort in site.data.sortBox %}
+        <li class="list-item">
+            <div class="checkbox">
+                <input class="list-checkbox" type="checkbox" value=".{{ sort.sort }}"/>
+                <label class="list-label">{{ sort.title }}</label>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="section-content">
+    <h5 class="section-title">PRICE</h5>
+    <hr class="divider"/>
+    <ul class="list-container">
+        {% for sort in site.data.priceFilter %}
+        <li class="list-item">
+            <div class="checkbox">
+                <input class="list-checkbox" type="checkbox" value=".{{ sort.sort }}"/>
+                <label class="list-label">{{ sort.title }}</label>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+
+
+
+

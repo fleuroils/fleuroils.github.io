@@ -4,3 +4,14 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+
+social-media:
+  - link:
+    image: "facebook.png"
+
+  - link:
+    image: "twitter.png"
+
+  - link:
+    image: "instagram.png"
