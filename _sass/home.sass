@@ -5,6 +5,8 @@ body
   background-color: #f9f9f9
   margin: 50px
   min-height: 100vh
+  font-family: "Lato","sans-serif"
+  font-weight: 400
 
 .no-gutter
   padding-left: 0
@@ -18,6 +20,7 @@ body
   .container-fluid
     .navbar-header
       .navbar-brand
+        height: auto
         display: block
     #navbar-right-collapse
       .navbar-right
@@ -44,6 +47,30 @@ body
               font-size: 18px
               display: inline-block
               vertical-align: middle
+
+.filter-container
+  position: relative
+  margin: 35px auto 55px
+  margin-left: 15px
+  margin-right: 15px
+  .filters-button-group
+    position: relative
+    border-radius: 5px
+    padding-left: 15px
+    padding-right: 15px
+    background-color: #a2db8e
+    .btn-isotope
+      text-transform: uppercase
+      text-decoration: none
+      text-align: center
+      padding: 30px 20px
+      border-radius: 0
+      outline: none
+      background-color: transparent
+      color: white
+      border: none
+
+
 #myModal
   .container
     max-width: 750px

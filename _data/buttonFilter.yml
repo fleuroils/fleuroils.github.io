@@ -1,0 +1,25 @@
+- id: 1
+  name: "Essential Oils"
+  filter: "esential-oil"
+
+- id: 2
+  name: "Synergies"
+  filter: "synergies"
+
+- id: 3
+  name: "Floral Waters"
+  filter: "floral-water"
+
+- id: 4
+  name: "Massage Oils"
+  filter: "massage-oil"
+
+- id: 5
+  name: "Candles & Soaps"
+  filter: "candle-soap"
+
+- id: 6
+  name: "Diffusers"
+  filter: "diffuser"
+
+

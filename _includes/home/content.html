@@ -1,0 +1,11 @@
+<div class="filter-container">
+    <div class="container-fluid">
+        <div class="filters-button-group button-group">
+            {% for filter in site.data.buttonFilter %}
+            {% assign counter = counter | plus: 1%}
+            <button class="btn-isotope" data-filter=".{{ filter.filter }}">{{ filter.name }}</button>
+            {% endfor %}
+            <!--<input type="text" placeholder="search couple name" class="inputSearch form-control" id="search-name1">-->
+        </div>
+    </div>
+</div>
