@@ -1,38 +1,28 @@
 <footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
+  <div class="container no-gutter">
+    <div class="content-container">
+      <div class="left-section">
+        <h5 class="content-text">Threelogy All Rights Reserved 2016</h5>
       </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
+      <div class="right-section">
+        <ul class="media-container">
+          <li class="media-list">
+            <a href="https://www.facebook.com/threelogyvideo/" target="_blank" class="media-link">
+              <img class="media-button center-block" src="/img/icon-button/facebook.png"/>
+            </a>
           </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
+          <li class="media-list">
+            <a href="https://www.instagram.com/threelogyvideo/" target="_blank" class="media-link">
+              <img class="media-button center-block" src="/img/icon-button/Instagram.png"/>
+            </a>
           </li>
-          {% endif %}
+          <li class="media-list">
+            <a href="https://www.youtube.com/channel/UC83jnNXMp8cniE8u_RZGyjg" target="_blank" class="media-link">
+              <img class="media-button center-block" src="/img/icon-button/youtube.png"/>
+            </a>
+          </li>
         </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
       </div>
     </div>
-
   </div>
-
 </footer>
