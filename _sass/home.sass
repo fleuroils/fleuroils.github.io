@@ -30,7 +30,7 @@ body
           display: inline-block
           #myModal
             color: #a2db8e
-            font-size: 18px
+            font-size: 16px
             display: block !important
             text-transform: uppercase
             padding: 20px 55px !important
@@ -40,11 +40,11 @@ body
             padding: 18px 43px
             border-radius: 40px
             #number-icon
-              font-size: 20px
+              font-size: 18px
               display: inline-block
               vertical-align: middle
             #number
-              font-size: 18px
+              font-size: 16px
               display: inline-block
               vertical-align: middle
 
@@ -60,6 +60,7 @@ body
     padding-right: 15px
     background-color: #a2db8e
     .btn-isotope
+      float: left
       text-transform: uppercase
       text-decoration: none
       text-align: center
@@ -69,6 +70,44 @@ body
       background-color: transparent
       color: white
       border: none
+      transition: all 300ms ease-in-out
+      &.is-checked, &:hover
+        color: #a2db8e
+        background-color: white
+    .search-container
+      padding: 12px 0
+      float: right
+      max-width: 32%
+      min-width: 32%
+      .inputSearch
+        color: white
+        display: inline-block
+        font-style: italic
+        max-width: 87%
+        min-width: 87%
+        height: 55px
+        border: 0
+        border-radius: 30px
+        background-color: #ccebc1
+        outline: none
+        box-shadow: none
+        -webkit-appearance: none
+        &::-webkit-input-placeholder
+          color: white
+        &:-moz-placeholder  /* Firefox 18- */
+          color: white
+        &::-moz-placeholder  /* Firefox 19+ */
+          color: white
+        &:-ms-input-placeholder
+          color: white
+      .search-icon
+        color: white
+        display: inline-block
+        font-size: 26px
+        vertical-align: middle
+        margin-left: 20px
+        margin-right: 20px
+
 
 
 #myModal
