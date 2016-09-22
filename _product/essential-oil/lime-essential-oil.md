@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "essential-oil"
 name: "Lime Essential Oil"
 price: "$3.80"

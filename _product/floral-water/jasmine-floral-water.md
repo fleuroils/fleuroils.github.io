@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "floral-water"
 name: "Jasmine Floral Water"
 price: "$7.50"

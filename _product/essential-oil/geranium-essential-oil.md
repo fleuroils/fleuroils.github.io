@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "essential-oil"
 name: "Geranium Essential Oil"
 price: "$5.00"

@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "essential-oil"
 name: "Rosewood Essential Oil"
 price: "$6.00"

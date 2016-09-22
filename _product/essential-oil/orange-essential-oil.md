@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "essential-oil"
 name: "Orange Essential Oil"
 price: "$2.50"

@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "synergy"
 name: "Exotique Oil Synergy (Blends)"
 price: "$5.75"

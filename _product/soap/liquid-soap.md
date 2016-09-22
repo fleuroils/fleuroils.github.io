@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "soap"
 name: "Liquid Soap"
 price: "$3.95"

@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "essential-oil"
 name: "Tea Tree Essential Oil"
 price: "$3.50"

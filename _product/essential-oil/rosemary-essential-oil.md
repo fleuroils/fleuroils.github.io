@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "essential-oil"
 name: "Rosemary Essential Oil"
 price: "$3.90"

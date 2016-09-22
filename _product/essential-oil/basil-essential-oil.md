@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "essential-oil"
 name: "Basil Essential Oil"
 price: "$3.00"

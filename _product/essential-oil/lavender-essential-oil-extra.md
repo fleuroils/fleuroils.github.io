@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "essential-oil"
 name: "Lavender Essential Oil Extra"
 price: "$5.00"

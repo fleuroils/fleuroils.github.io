@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "floral-water"
 name: "Lavender Floral Water"
 price: "$5.50"

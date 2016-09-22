@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "floral-water"
 name: "Orange Blossom Floral Water"
 price: "$4.95"

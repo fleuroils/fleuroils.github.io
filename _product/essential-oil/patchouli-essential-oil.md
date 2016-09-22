@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "essential-oil"
 name: "Patchouli Essential Oil"
 price: "$6.50"

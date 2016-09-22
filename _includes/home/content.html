@@ -1,14 +1,16 @@
 <div class="filter-container">
     <div class="container-fluid">
-        <div class="filters-button-group button-group clearfix">
-            {% for filter in site.data.buttonFilter %}
+        <div id="filters-button-group" class="filters-button-group button-group clearfix">
+            <fieldset>
+            {% for filter in site.filter %}
             {% assign counter = counter | plus: 1%}
-            <button {% if counter == 1 %} class="btn-isotope is-checked" {% else %} class="btn-isotope" {% endif %} data-filter=".{{ filter.filter }}">{{ filter.name }}</button>
+            <button {% if counter == 1 %} class="filter active" {% else %} class="filter" {% endif %} data-filter=".{{ filter.filter }}">{{ filter.name }}</button>
             {% endfor %}
             <div class="search-container">
                 <input type="text" placeholder="Search products" class="inputSearch form-control" id="search-name1">
                 <span class="search-icon glyphicon glyphicon-search"></span>
             </div>
+            </fieldset>
         </div>
     </div>
 </div>

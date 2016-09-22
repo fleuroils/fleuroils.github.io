@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "diffuser"
 name: "Aromamist Ultrasonic Oil Diffuser"
 price: "$39.00"

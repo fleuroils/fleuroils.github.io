@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "massage-oil"
 name: "Aromatherapist Master Kit by Spa Contour"
 price: "$34.95"

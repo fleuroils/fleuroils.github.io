@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "floral-water"
 name: "Rose Floral Water"
 price: "$4.95"

@@ -5,6 +5,30 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
+sass:
+    style: compressed
+
+filter:
+  - name: "Essential Oils"
+    filter: "essential-oil"
+
+  - name: "Synergies"
+    filter: "synergy"
+
+  - name: "Floral Waters"
+    filter: "floral-water"
+
+  - name: "Massage Oils"
+    filter: "massage-oil"
+
+  - name: "Candles & Soaps"
+    filter: "soap"
+
+  - name: "Diffusers"
+    filter: "diffuser"
+
+
+
 product-category:
   - id: 1
     name: "Essential Oils"
@@ -40,3 +64,8 @@ social-media:
 
   - link: "https://www.instagram.com/spaorder/"
     image: "instagram.png"
+
+
+collections:
+  product:
+    output: true

@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "essential-oil"
 name: "Rose Essential Oil"
 price: "$6.00"

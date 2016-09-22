@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "essential-oil"
 name: "Mandarin Essential Oil"
 price: "$2.75"

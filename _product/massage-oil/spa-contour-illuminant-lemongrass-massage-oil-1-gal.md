@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "massage-oil"
 name: "Spa Contour Illuminant (Lemongrass) Massage Oil - 1 Gal"
 price: "$28.00"

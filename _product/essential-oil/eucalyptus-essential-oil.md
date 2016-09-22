@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "essential-oil"
 name: "Eucalyptus Essential Oil"
 price: "$2.50"

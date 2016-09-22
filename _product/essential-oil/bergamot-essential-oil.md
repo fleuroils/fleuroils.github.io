@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "essential-oil"
 name: "Bergamot Essential Oil"
 price: "$6.75"

@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "massage-oil"
 name: "Spa Contour Elixir (Ylang Ylang) Massage Oil - 16 oz"
 price: "$8.75"

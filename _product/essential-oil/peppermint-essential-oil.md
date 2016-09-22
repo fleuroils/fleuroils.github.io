@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "essential-oil"
 name: "Peppermint Essential Oil"
 price: "$3.00"

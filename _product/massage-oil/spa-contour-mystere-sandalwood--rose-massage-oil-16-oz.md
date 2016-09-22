@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "massage-oil"
 name: "Spa Contour Mystere (Sandalwood & Rose) Massage Oil - 16 oz"
 price: "$8.75"

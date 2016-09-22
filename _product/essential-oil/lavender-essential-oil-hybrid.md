@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "essential-oil"
 name: "Lavender Essential Oil Hybrid"
 price: "$2.50"

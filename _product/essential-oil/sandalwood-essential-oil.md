@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "essential-oil"
 name: "Sandalwood Essential Oil"
 price: "$19.00"

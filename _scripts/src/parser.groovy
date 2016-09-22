@@ -33,7 +33,7 @@ dir.eachFileRecurse (FileType.FILES) { csvFile ->
         file.write ('---\n')
 
 //        file << "slugID: $counter \n"
-        file << "layout: none\n"
+        file << "\n"
         file << "category: \"$category\"\n"
         file << "name: \"$product.productName\"\n"
         file << "price: \"$product.price\"\n"

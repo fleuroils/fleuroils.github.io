@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "synergy"
 name: "Zen / Anti-Stress Oil Synergy (Blends)"
 price: "$5.00"

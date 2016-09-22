@@ -1,5 +1,5 @@
 ---
-layout: none
+
 category: "essential-oil"
 name: "Fleur Frankinscence Essential Oil"
 price: "$7.00"

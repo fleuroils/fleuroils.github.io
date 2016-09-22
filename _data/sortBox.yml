@@ -1,6 +1,3 @@
-- title: "Featured"
-  sort: "featured"
-
 - title: "Price: Low to High"
   sort: "myorder:asc"
 
