@@ -7,11 +7,11 @@ markdown: kramdown
 
 
 social-media:
-  - link:
+  - link: "https://www.facebook.com/SpaOrder/"
     image: "facebook.png"
 
-  - link:
+  - link: "https://twitter.com/spa_order"
     image: "twitter.png"
 
-  - link:
+  - link: "https://www.instagram.com/spaorder/"
     image: "instagram.png"
