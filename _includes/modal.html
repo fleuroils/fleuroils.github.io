@@ -3,64 +3,22 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="/img/close.png"/>
+                    </button>
                 </div>
                 <div class="modal-body clearfix">
-                    <div id="contact" class="clearfix">
-                        <div id="left-section" class="col-md-6 clearfix">
-                            <div class="section-header">
-                                <h2 class="header">Send us a message</h2>
-                            </div>
-                            <script type="text/javascript">var submitted = false;</script>
-                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;)"></iframe>
-                            <form id="form-content" action="https://formspree.io/jonchug@gmail.com" target="hidden_iframe" method="POST" class="form-content clearfix">
-                                <div class="form-item clearfix">
-                                    <span class="content-title ">Full Name</span>
-                                    <input class="content-input form-control input-lg" name="name" autocomplete="off" required type="text" value="" size="40" aria-required="true" aria-invalid="false">
-                                </div>
-
-                                <div class="form-item clearfix">
-                                    <span class="content-title ">Email Address</span>
-                                    <input class="content-input form-control input-lg" name="_replyto" autocomplete="off" required type="email" value="" size="40" aria-required="true" aria-invalid="false">
-                                </div>
-
-                                <div class="form-item clearfix">
-                                    <span class="content-title ">Subject</span>
-                                    <input class="content-input form-control input-lg" name="subject" autocomplete="off" required type="text" value="" size="40" aria-required="true" aria-invalid="false">
-                                </div>
-
-                                <div class="form-item clearfix">
-                                    <span class="content-title ">Message</span>
-                                    <textarea class="text-area content-input form-control" name="message"  required type="text"  value="" rows="7"></textarea>
-                                </div>
-                                <input type="hidden" name="_subject" value="New submission!" />
-                                <input type="hidden" name="_next" value="/" />
-                                <input type="text" name="_gotcha" style="display:none" />
-
-                                <div class="content-button-container">
-                                    <button data-toggle="modal-message" type="submit" id="ss-submit" class="input-lg form-control submit-button ">SEND</button>
-                                </div>
-                            </form>
+                    <div id="about" class="clearfix">
+                        <div class="logo-section">
+                            <img src="/img/about-logo.jpg" class="center-block"/>
                         </div>
-                        <div id="right-section" class="col-md-6 col-sm-12 col-xs-12 clearfix">
-                            <div class="caption">
-                                <h2 class="section-header">Location</h2>
-                                <address class="section-address">54-E Mapagkawanggawa corner Magiting St., Teachers Village, Quezon City, Philippines</address>
-                            </div>
-
-                            <div class="caption">
-                                <h2 class="section-header">Get in touch</h2>
-                                <ul class="list-container">
-                                    <span class="list-title">Telefax</span>
-                                    <li class="list-item">+6324344428</li>
-                                    <span class="list-title">Mobile</span>
-                                    <li class="list-item">+639189139627</li>
-                                    <li class="list-item">+639209506558</li>
-                                    <li class="list-item">+639399083603</li>
-                                    <span class="list-title">Email</span>
-                                    <li class="list-item">inquiry@threelogyvideo.com</li>
-                                </ul>
-                            </div>
+                        <div class="description-section">
+                            <p>Enchant your senses. Rejuvenate your spirit.<br/>
+                                Fleur Oils celebrate the age-old traditions of wellness with essential oils. Whether you desire common oils or exotic, all of our selections are sourced from respected Fair Trade farms and cooperatives around the world. These small producers maintain traditional methods of oil extraction to ensure quality, purity, and sustainable sourcing. The result is an exceptional selection of essential oils at prices you can’t resist.
+                            </p>
+                        </div>
+                        <div class="button-section">
+                            <a href="/" class="shop-now">SHOW NOW</a>
                         </div>
                     </div>
                 </div>
@@ -70,12 +28,3 @@
 </div><!-- /.modal -->
 
 
-<div class="modal fade" id="modal-message" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-2">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <h2 class="text-alert">You successfully submitted your response.</h2>
-            </div>
-        </div>
-    </div>
-</div>

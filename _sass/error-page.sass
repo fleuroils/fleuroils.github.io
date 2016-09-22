@@ -1,0 +1,40 @@
+#error-page
+  background-image: url('/img/error-404.jpg')
+  background-size: cover
+  background-position: top center
+  background-repeat: no-repeat
+  height: 100vh
+  position: relative
+  .content-container
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    -moz-transform: translateY(-50%)
+    -o-transform: translateY(-50%)
+    -ms-transform: translateY(-50%)
+    .caption
+      color: white
+      display: table
+      margin-left: auto
+      margin-right: auto
+      span
+        display: block
+        &:nth-child(1)
+          font-size: 100px
+        &:nth-child(2), &:nth-child(3)
+          font-size: 44px
+
+    .button-container
+      display: table
+      margin-left: auto
+      margin-right: auto
+      margin-top: 90px
+      a
+        text-decoration: none
+        color: white
+        font-size: 20px
+        padding: 30px 90px
+        border-radius: 60px
+        background: #a2db8e
+
+
