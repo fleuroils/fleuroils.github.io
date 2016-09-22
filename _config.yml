@@ -5,6 +5,31 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 
+product-category:
+  - id: 1
+    name: "Essential Oils"
+    link: "esential-oil"
+
+  - id: 2
+    name: "Synergies"
+    link: "synergies"
+
+  - id: 3
+    name: "Floral Waters"
+    link: "floral-water"
+
+  - id: 4
+    name: "Massage Oils"
+    link: "massage-oil"
+
+  - id: 5
+    name: "Candles & Soaps"
+    link: "candle-soap"
+
+  - id: 6
+    name: "Diffusers"
+    link: "diffuser"
+
 
 social-media:
   - link: "https://www.facebook.com/SpaOrder/"
