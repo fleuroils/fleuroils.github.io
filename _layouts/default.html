@@ -15,9 +15,9 @@
 </head>
 <body>
 
-{% include navbar.html %}
+<!--{% include navbar.html %}-->
 {{ content }}
-{% include footer.html %}
+<!--{% include footer.html %}-->
 
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -42,13 +42,16 @@
     init: function(){
       var self = this; // As a best practice, in each method we will asign "this" to the variable "self" so that it remains scope-agnostic. We will use it to refer to the parent "buttonFilter" object so that we can share methods and properties between all parts of the object.
 
-      self.$filters = $('#filters-button-group');
+      self.$filters = $('.filters-button-group');
       self.$reset = $('#Reset');
       self.$container = $('#Container');
 
       self.$filters.find('fieldset').each(function(){
+        var $this = $(this);
+
         self.groups.push({
-          $buttons: $(this).find('.filter'),
+          $buttons: $this.find('.filter'),
+          $dropdown: $this.find('select'),
           active: ''
         });
       });
@@ -77,12 +80,20 @@
         self.parseFilters();
       });
 
+      // Handle dropdown change
+
+      self.$filters.on('change', function(){
+        self.parseFilters();
+      });
+
       // Handle reset click
 
       self.$reset.on('click', function(e){
         e.preventDefault();
 
         self.$filters.find('.filter').removeClass('active');
+        self.$filters.find('.show-all').addClass('active');
+        self.$filters.find('select').val('');
 
         self.parseFilters();
       });
@@ -96,7 +107,9 @@
       // loop through each filter group and grap the active filter from each one.
 
       for(var i = 0, group; group = self.groups[i]; i++){
-        group.active = group.$buttons.filter('.active').attr('data-filter') || '';
+        group.active = group.$buttons.length ?
+        group.$buttons.filter('.active').attr('data-filter') || '' :
+                group.$dropdown.val();
       }
 
       self.concatenate();
@@ -113,9 +126,9 @@
         self.outputString += group.active;
       }
 
+      // If the output string is empty, show all rather than none:
 
-
-      !self.outputString.length && (self.outputString = $filters );
+      !self.outputString.length && (self.outputString = 'all');
 
       console.log(self.outputString);
 
@@ -133,27 +146,28 @@
 
   $(function(){
 
+    var $sortSelect = $('#sort-btn');
+    var $container = $('#Container');
     // Initialize buttonFilter code
-
     buttonFilter.init();
 
     // Instantiate MixItUp
 
-    $('#Container').mixItUp({
+    $container.mixItUp({
       controls: {
-        enable: false // we won't be needing these
+        enable: false
       },
       load:{
         filter: '.essential-oil',
         sort: 'default: asc'
-      },
-      callbacks: {
-        onMixFail: function(){
-          alert('No items were found matching the selected filters.');
-        }
       }
     });
+    
+    $sortSelect.on('change',function () {
+      $container.mixItUp('sort', this.value);
+    })
   });
+
 </script>
 </body>
 

@@ -1,33 +1,29 @@
+<div class="filters-button-group section-content">
+    <h5 class="section-title">FILTER BY</h5>
+    <hr class="divider"/>
+    <fieldset>
+        <select class="btn filter-btn btn-default">
+            <option value="">All</option>
+            <option value=".new">New</option>
+            <option value=".best-buy">Best Buy</option>
+        </select>
+    </fieldset>
+
+
+</div>
+
+
+
 <div class="section-content">
     <h5 class="section-title">SORT BY</h5>
     <hr class="divider"/>
-    <ul class="list-container">
-        {% for sort in site.data.sortBox %}
-        <li class="list-item">
-            <div class="checkbox">
-                <input class="list-checkbox" type="checkbox" value=".{{ sort.sort }}"/>
-                <label class="list-label">{{ sort.title }}</label>
-            </div>
-        </li>
-        {% endfor %}
-    </ul>
+    <fieldset>
+        <select id="sort-btn" class="btn btn-default">
+            <option value="price:asc">Price: Low to High</option>
+            <option value="price:desc">Price: High to Low</option>
+        </select>
+    </fieldset>
 </div>
-
-<div class="section-content">
-    <h5 class="section-title">PRICE</h5>
-    <hr class="divider"/>
-    <ul class="list-container">
-        {% for sort in site.data.priceFilter %}
-        <li class="list-item">
-            <div class="checkbox">
-                <input class="list-checkbox" type="checkbox" value=".{{ sort.sort }}"/>
-                <label class="list-label">{{ sort.title }}</label>
-            </div>
-        </li>
-        {% endfor %}
-    </ul>
-</div>
-
 
 
 
