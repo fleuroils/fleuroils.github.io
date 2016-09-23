@@ -76,3 +76,7 @@ collections:
   product:
     output: true
     permalink: /product/:path/
+
+  products:
+    output: true
+    permalink: /products/:path/

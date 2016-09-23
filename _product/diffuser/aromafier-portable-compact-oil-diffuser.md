@@ -1,5 +1,4 @@
 ---
-
 category: "diffuser"
 name: "Aromafier Portable Compact Oil Diffuser"
 price: "$10.00"
