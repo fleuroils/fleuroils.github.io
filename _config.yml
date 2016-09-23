@@ -75,3 +75,4 @@ social-media:
 collections:
   product:
     output: true
+    permalink: /product/:path/
