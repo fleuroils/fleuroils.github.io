@@ -5,8 +5,6 @@ layout: null
 [
   {% for product in site.product %}
     {% unless first %},{% endunless %}{
-        "slug": "{{ product.name | jsonify | slugify }}",
-        "description": {{ product.content | jsonify }},
         "name": {{ product.name | jsonify }},
         "link": {{ product.link | jsonify }}
     }
