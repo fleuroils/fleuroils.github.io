@@ -4,61 +4,29 @@
             <fieldset>
                 {% for filter in site.filter %}
                 {% assign counter = counter | plus: 1%}
-                <button {% if counter== 1 %} class="filter active" {% else %} class="filter" {% endif %}
-                        data-filter=".{{ filter.filter }}">{{ filter.name }}
+                <button {% if counter == 1 %} class="filter active" {% else %} class="filter" {% endif %} data-filter=".{{ filter.filter }}">{{ filter.name }}
                 </button>
                 {% endfor %}
-                <!--<div class="search-container">-->
-                    <!--<input type="text" placeholder="Search products" class="inputSearch form-control" id="search-name1">-->
-                    <!--<span class="search-icon glyphicon glyphicon-search"></span>-->
-                <!--</div>-->
                 <div class="search-container">
-                    <form method="get" data-search-form>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search Products..." data-search-input/>
-                            <ul data-search-results class="results">
-                                <li data-search-found>
-                                    <span data-search-found-count></span> result(s) found for &ldquo;<span
-                                        data-search-found-term></span>&rdquo;.
-                                </li>
-                                <script type="text/x-template" id="search-result">
-                                <li item>
-                                    <a href="##Link##">
-                                        <h4 class="group inner list-group-item-heading">##Name##</h4>
-                                    </a>
-                                </li>
-                                </script>
-
-                            </ul>
-                          </span>
-                        </div>
-                    </form>
+                    <div id="scrollable-dropdown-menu">
+                        <input class="typeahead" placeholder="Search Product Name"></input>
+                    </div>
                 </div>
-
-
             </fieldset>
         </div>
     </div>
 </div>
-<div class="search-container">
-
-        <!--<div class="alert alert-success" role="alert" data-search-found>-->
-            <!--<span data-search-found-count></span> result(s) found for &ldquo;<span-->
-                <!--data-search-found-term></span>&rdquo;.-->
-        <!--</div>-->
 
 
-        <!-- Search result template -->
+<div class="content-container">
+    <div class="container-fluid">
+        <div class="left-section col-md-2">
+            {% include home/filter.html %}
+        </div>
+        <div class="right-section col-md-10">
+            {% include home/product-result.html %}
+        </div>
+    </div>
+</div>
 
-    <!--<div class="content-container">-->
-    <!--<div class="container-fluid">-->
-    <!--<div class="left-section col-md-2">-->
-    <!--{% include home/filter.html %}-->
-    <!--</div>-->
-    <!--<div class="right-section col-md-10">-->
-    <!--{% include home/product-result.html %}-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
-
-    <!--{% include modal.html %}-->
+    {% include modal.html %}

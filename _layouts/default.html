@@ -15,18 +15,47 @@
 </head>
 <body>
 
-<!--{% include navbar.html %}-->
+{% include navbar.html %}
 {{ content }}
-<!--{% include footer.html %}-->
+{% include footer.html %}
 
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-<script type="text/javascript" src="/js/search.js"></script>
 <script type="text/javascript" src="/js/modernizr.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/typeahead.bundle.min.js"></script>
+<script type="text/javascript" src="/js/handlebars.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.js"></script>
 <!--<script type="text/javascript" src="/js/home.js"></script>-->
+<script type="text/javascript">
+
+
+  var dataSource = new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    prefetch: '/feeds/feed.json'
+
+  });
+
+  dataSource.initialize();
+
+
+  $('.typeahead').typeahead({
+    minLength: 0,
+    highlight: true
+  }, {
+    name: 'name',
+    display: function(item){ return item.name},
+    source: dataSource.ttAdapter(),
+    templates: {
+      empty: [
+        '<div class="empty">No Result Foundd</div>'].join('\n'),
+        suggestion: Handlebars.compile('<p style="padding:6px">{% raw %}<a href="{{ link }}">{{ name }}</a> {% endraw %}</p> ')
+
+    }
+  });
+</script>
 <script type="text/javascript">
   var buttonFilter = {
 
