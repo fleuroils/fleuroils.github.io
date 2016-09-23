@@ -25,7 +25,6 @@ var q, jsonFeedUrl = "/feeds/feed.json",
 
 
 $(document).ready( function() {
-
     // hide items found string
     $foundContainer.hide();
 
