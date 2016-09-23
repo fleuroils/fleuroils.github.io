@@ -9,22 +9,28 @@ sass:
     style: compressed
 
 filter:
-  - name: "Essential Oils"
+  - id: 1
+    name: "Essential Oils"
     filter: "essential-oil"
 
-  - name: "Synergies"
+  - id: 2
+    name: "Synergies"
     filter: "synergy"
 
-  - name: "Floral Waters"
+  - id: 3
+    name: "Floral Waters"
     filter: "floral-water"
 
-  - name: "Massage Oils"
+  - id: 4
+    name: "Massage Oils"
     filter: "massage-oil"
 
-  - name: "Candles & Soaps"
+  - id: 5
+    name: "Candles & Soaps"
     filter: "soap"
 
-  - name: "Diffusers"
+  - id: 6
+    name: "Diffusers"
     filter: "diffuser"
 
 

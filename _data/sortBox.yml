@@ -4,8 +4,4 @@
 - title: "Price: High to Low"
   sort: "myorder:desc"
 
-- title: A - Z
-  sort: "myorder:asc"
-
-
 

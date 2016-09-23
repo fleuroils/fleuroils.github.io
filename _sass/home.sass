@@ -69,7 +69,7 @@ header
       color: white
       border: none
       transition: all 300ms ease-in-out
-      &.is-checked, &:hover
+      &.active, &:hover
         color: #a2db8e
         background-color: white
     .search-container
@@ -107,6 +107,7 @@ header
         margin-right: 20px
 
 .content-container
+  min-height: 70vh
   .left-section
     background-color: white
     border-radius: 5px
@@ -130,11 +131,33 @@ header
               color: #585858
               padding-left: 5px
   .right-section
-    height: 91vh
     .section-content
       #Container
         .item-list
+          background-color: white
           display: none
+          height: 250px
+          padding-top: 50px
+          padding-bottom: 50px
+          margin-bottom: 30px
+          .left-section
+            .product-image
+              width: 90px
+          .right-section
+            .product-details
+              .product-price
+                display: block
+              .product-name
+                min-height: 40px
+                display: block
+              .product-link
+                color: white
+                margin: 10px 0 0
+                display: inline-block
+                padding: 10px 20px
+                border-radius: 20px
+                text-decoration: none
+                background-color: #a2db8e
 
 #myModal
   .container
@@ -162,12 +185,9 @@ header
             margin-top: 0
             outline: none
             box-shadow: none
-            span
-              display: block
-              font-size: 44px
-              margin-top: 0
+            img
+              height: 30px
         .modal-body
-          padding: 50px 15px
           padding: 50px 15px
           #about
             position: relative
@@ -178,6 +198,7 @@ header
               padding: 40px 120px
               p
                 text-align: center
+                line-height: 25px
             .button-section
               display: table
               margin-left: auto

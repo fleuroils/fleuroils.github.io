@@ -2,11 +2,17 @@
     <div id="Container">
         <!--<div class="fail-message"><span>No items were found matching the selected filters</span></div>-->
         {% for product in site.product %}
-        <div class="col-md-4 item-list mix {{ product.category }}">
-            <h4>{{ product.name }}</h4>
-            <img src="{{ product.image }}"/>
-            <a href="{{ product.link }}" target="_blank">LINK TEST</a>
-            <h6>{{ product.price }}</h6>
+        <div class="col-md-3 item-list mix no-gutter {{ product.category }}">
+            <div class="col-md-4 col-lg-6  left-section">
+                <img class="product-image center-block img-responsive" src="{{ product.image }}"/>
+            </div>
+            <div class="col-md-8 col-lg-6 right-section right-product-detail">
+                <div class="product-details">
+                    <h6 class="product-price">{{ product.price }}</h6>
+                    <h5 class="product-name">{{ product.name }}</h5>
+                    <a class="product-link" href="{{ product.link }}" target="_blank">BUY NOW</a>
+                </div>
+            </div>
         </div>
         {% endfor %}
     </div>
