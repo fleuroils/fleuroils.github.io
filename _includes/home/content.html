@@ -7,7 +7,7 @@
                 <button {% if counter == 1 %} class="filter active" {% else %} class="filter" {% endif %} data-filter=".{{ filter.filter }}">{{ filter.name }}
                 </button>
                 {% endfor %}
-                <div class="search-container">
+                <div class="search-container visible-lg hidden-md hidden-sm hidden-xs">
                     <div id="scrollable-dropdown-menu">
                         <input class="typeahead" placeholder="Search Product Name"></input>
                     </div>
@@ -16,17 +16,51 @@
         </div>
     </div>
 </div>
+<div class="md-content-container clearfix hidden-lg visible-md visible-sm visible-xs">
+    <div class="col-md-6 col-sm-6 col-xs-12 search-section">
+        <div class="search-container">
+            <div id="scrollable-dropdown-menu">
+                <input class="typeahead" placeholder="Search Product Name"></input>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="col-md-6 col-sm-6 col-xs-6 filter-section">
+            <div class="filters-button-group section-content">
+                <fieldset>
+                    <select class="btn filter-btn btn-default">
+                        <option value="">All</option>
+                        <option value=".new">New</option>
+                        <option value=".best-buy">Best Buy</option>
+                    </select>
+                </fieldset>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6 sort-section">
+            <div class="sort-button-group section-content">
+                <fieldset>
+                    <select id="sort-btn" class="btn btn-default">
+                        <option value="default:asc">Default</option>
+                        <option value="price:asc">Price: Low to High</option>
+                        <option value="price:desc">Price: High to Low</option>
+                    </select>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 <div class="content-container">
     <div class="container-fluid">
-        <div class="left-section-container col-lg-2 col-md-3">
+        <div class="left-section-container visible-lg hidden-md hidden-sm hidden-xs col-lg-2 col-md-3">
             {% include home/filter.html %}
         </div>
-        <div class="right-section-container col-lg-10 col-md-9">
+        <div class="right-section-container col-lg-10 col-md-12">
             {% include home/product-result.html %}
         </div>
     </div>
 </div>
 
-    {% include modal.html %}
+{% include modal.html %}
