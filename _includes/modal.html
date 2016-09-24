@@ -1,4 +1,4 @@
-<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+<div id="about-modal" class="modal fade" tabindex="-1" role="dialog">
     <div class="container">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -23,5 +23,90 @@
         </div><!-- /.modal-dialog -->
     </div>
 </div><!-- /.modal -->
+
+<div id="contact-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="container" style="max-width: 600px">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="/img/close.png"/>
+                    </button>
+                </div>
+                <div class="modal-body clearfix">
+                    <div id="contact" class="clearfix">
+                        <!--<div class="logo-section">-->
+                            <!--<img src="/img/about-logo.jpg" class="center-block"/>-->
+                        <!--</div>-->
+                        <div class="contact-form">
+                            <script type="text/javascript">var submitted = false;</script>
+                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;)"></iframe>
+                            <form id="form-content" action="https://formspree.io/rensramos17@gmail.com" target="hidden_iframe" method="POST" class="form-content clearfix">
+                                <div class="col-md-6 ">
+                                    <div class="form-item clearfix">
+                                        <span class="content-title ">Full Name</span>
+                                        <input class="content-input form-control input-md" name="name" autocomplete="off" required type="text" value="" size="40" aria-required="true" aria-invalid="false">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-item clearfix">
+                                        <span class="content-title ">Email Address</span>
+                                        <input class="content-input form-control input-md" name="_replyto" autocomplete="off" required type="email" value="" size="40" aria-required="true" aria-invalid="false">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-item clearfix">
+                                        <span class="content-title ">Company Name</span>
+                                        <input class="content-input form-control input-md" name="company" autocomplete="off" required type="text" value="" size="40" aria-required="true" aria-invalid="false">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 ">
+                                    <div class="form-item clearfix">
+                                        <span class="content-title ">Phone Number</span>
+                                        <input class="content-input form-control input-md" name="phone_number" autocomplete="off" required type="number" value="" size="40" aria-required="true" aria-invalid="false">
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="col-md-12">
+                                    <div class="form-item clearfix">
+                                        <span class="content-title ">Details</span>
+                                        <textarea class="text-area content-input form-control" name="message"  required type="text"  value="" rows="4"></textarea>
+                                    </div>
+                                </div>
+
+                                <input type="hidden" name="_subject" value="New submission!" />
+                                <input type="hidden" name="_next" value="/" />
+                                <input type="text" name="_gotcha" style="display:none" />
+
+                                <br/>
+                                <div class="col-md-12">
+                                    <div class="content-button-container">
+                                        <button data-toggle="modal-message" type="submit" id="ss-submit" class="input-lg form-control submit-button ">SEND</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+</div><!-- /.modal -->
+
+<div class="modal fade" id="modal-message" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2 class="text-alert">You successfully submitted your response.</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 
 

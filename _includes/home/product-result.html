@@ -2,7 +2,7 @@
     <div id="Container">
         <div class="fail-message"><span>No items were found matching the selected filters</span></div>
         {% for product in site.product %}
-        <div class="col-md-3 item-list mix no-gutter {{ product.category }} {{ product.type }}" data-price="{{ product.price | replace:'$','' }}">
+        <div class="col-lg-3 col-md-6 item-list mix {{ product.category }} {{ product.type }}" data-price="{{ product.price | replace:'$','' }}">
             <div class="col-md-4 col-lg-6  left-section">
                 <img class="product-image center-block img-responsive" src="{{ product.image }}"/>
             </div>

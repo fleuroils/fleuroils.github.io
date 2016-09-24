@@ -1,7 +1,6 @@
 body
   margin: 50px
   min-height: 100vh
-  height: 150vh
   font-family: "Lato","sans-serif"
   font-weight: 400
   background-color: #F8F8F8
@@ -26,7 +25,7 @@ header
         margin-right: 0
         .navbar-item
           display: inline-block
-          #modal-button
+          .modal-button
             color: #a2db8e
             font-size: 16px
             display: block !important
@@ -141,9 +140,11 @@ header
         margin-bottom: 15px
         border-top: 2px solid #eeeeee
       fieldset
-        .selectpicker
-          display: block
-          height: 30px
+        .filter-btn
+          height: 40px
+          width: 90%
+        #sort-btn
+          height: 40px
           width: 90%
           
   .right-section-container
@@ -175,17 +176,20 @@ header
           opacity: 1
           pointer-events: auto
         .item-list
+          border: 2px solid transparent
           background-color: white
           display: none
           height: 250px
           padding-top: 50px
           padding-bottom: 50px
           margin-bottom: 30px
+          &:hover
+            border: 2px solid #a2db8e
+            border-radius: 5px
           .left-section
             .product-image
               width: 90px
           .right-section
-            border-right: 2px solid #eeeeee
             .product-details
               .product-price
                 display: block
@@ -202,7 +206,7 @@ header
                 text-decoration: none
                 background-color: #a2db8e
 
-#myModal
+#about-modal, #contact-modal
   .container
     max-width: 970px
     top: 50%
@@ -232,10 +236,40 @@ header
               height: 30px
         .modal-body
           padding: 50px 15px
-          #about
+          #about,#contact
             position: relative
             padding-top: 30px
             padding-bottom: 30px
+            .contact-form
+              position: relative
+              .section-header
+                .header
+                  color: #5f081a
+                  font-weight: bold
+                  font-size: 24px
+                  text-transform: uppercase
+              .form-item
+                .content-title
+                  color: #a2db8e
+                  display: block
+                  margin: 30px 0 10px
+                  font-size: 16px
+                  text-transform: uppercase
+                .content-input
+                  background-color: #f7f7f7
+                .text-area
+                  resize: none
+              .content-button-container
+                margin: 30px 0 10px
+                #ss-submit
+                  //height: 40px
+                  background-color: #a2db8e
+                  color: #ffffff
+                  text-transform: uppercase
+                  margin-top: 30px
+                  border: none
+
+
             .description-section
               color: #505050
               padding: 40px 120px
@@ -253,9 +287,50 @@ header
                 padding: 25px 70px
                 border-radius: 50px
                 display: block
-
 .modal-backdrop.in
   opacity: 0.85
+
+//  On modal success message
+
+#modal-message
+  z-index: 1051
+  .modal-dialog
+    position: absolute
+    top: 40%
+    left: 0
+    right: 0
+    opacity: 0
+    -webkit-transform: translateY(-40%)
+    -ms-transform: translateY(-40%)
+    -o-transform: translateY(-40%)
+    transform: translateY(-40%)
+    -webkit-transition: all 0.3s ease
+    -moz-transition: all 0.3s ease
+    -o-transition: all 0.3s ease
+    transition: all 0.3s ease
+
+  &.in .modal-dialog
+    margin-top: 0
+    margin-bottom: 0
+    position: absolute
+    top: 40%
+    opacity: 1
+    -webkit-transform: translateY(-40%)
+    -ms-transform: translateY(-40%)
+    -o-transform: translateY(-40%)
+    transform: translateY(-40%)
+  .modal-content
+    border: none
+    border-radius: 2px
+    -webkit-box-shadow: none
+    -moz-box-shadow: none
+    box-shadow: none
+    padding: 8% 5%
+    background-color: #a2db8e
+    .text-alert
+      margin: 20px auto
+      color: #ffffff
+      text-align: center
 
 
 .site-footer
@@ -272,6 +347,7 @@ header
       display: block
       padding-top: 8px
   .middle-section
+    padding: 90px 80px 0
     img
       display: block
       margin-left: auto
@@ -317,8 +393,10 @@ header
 
 //  Typeahead
 #scrollable-dropdown-menu
+  position: relative
   float: right
   .tt-dropdown-menu
+    padding-left: 10px
     max-height: 250px
     overflow-y: auto
 p
@@ -351,6 +429,8 @@ p
   color: #a2db8e
 
 .tt-dataset-name a
+  text-align: left
+
   font-size: 16px
   color: #a2db8e !important
 .typeahead
@@ -362,6 +442,7 @@ p
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset
 .tt-hint
   color: #a2db8e
+  text-align: left
 
 .tt-dropdown-menu
   background-color: #FFFFFF
@@ -370,12 +451,12 @@ p
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
   margin-top: 12px
   padding: 8px 0
-  width: 422px
+  width: 100%
 
 .tt-suggestion
   font-size: 18px
   line-height: 24px
-  padding: 3px 20px
+  padding: 3px 0px
   &.tt-cursor
     background-color: transparent
     color: #FFFFFF
@@ -399,14 +480,42 @@ p
 .example-sports .league-name
   border-bottom: 1px solid #CCCCCC
   margin: 0 20px 5px
-  padding: 3px 0
+  padding: 3px 20px
 
 .example-arabic .tt-dropdown-menu
-  text-align: right
+  text-align: left
 
 
 @media (max-width: 1440px)
   body
     margin: 0
 
+@media (max-width: 1280px)
+  .filter-container
+    .filters-button-group
+      .search-container
+        padding: 10px 0
+  #scrollable-dropdown-menu
+    input
+      max-width: 75%
+      min-width: 50%
+  .content-container
+    .right-section-container
+      .section-content
+        #Container
+          .item-list
+            .right-section
+              .product-details
+                .product-name
+                  min-height: 60px
+
+@media (max-width: $screen-md-max)
+  .filter-container
+    .filters-button-group
+      .search-container
+        min-width: 0
+        input
+
+  .typeahead
+    font-size: 14px
 

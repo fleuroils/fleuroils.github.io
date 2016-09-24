@@ -29,17 +29,13 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.js"></script>
 <!--<script type="text/javascript" src="/js/home.js"></script>-->
 <script type="text/javascript">
-
-
   var dataSource = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     prefetch: '/feeds/feed.json'
-
   });
 
   dataSource.initialize();
-
 
   $('.typeahead').typeahead({
     minLength: 0,
@@ -189,6 +185,14 @@
       load:{
         filter: '.essential-oil',
         sort: 'default: asc'
+      },
+      callbacks:{
+        onMixEnd: function(state){
+          $('.mix').removeClass('active-item');
+          state.$show.each(function( index ) {
+            $( this ).addClass( "active-item" );
+          });
+        }
       }
     });
     
@@ -197,6 +201,22 @@
     })
   });
 
+</script>
+
+<script>
+  $("#form-content").on("submit",function(){
+    $("#ss-submit").attr("disabled", true);
+    setTimeout(function(){
+      $("#ss-submit").attr("disabled", false);
+    }, 1000);
+    $("#hidden_iframe").on('load',function () {
+      $("#modal-message").modal('show');
+      $("#form-content")[0].reset();
+      setTimeout(function(){
+        $("#modal-message").modal('hide');
+      }, 2000);
+    });
+  });
 </script>
 </body>
 

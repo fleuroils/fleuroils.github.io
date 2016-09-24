@@ -1,5 +1,5 @@
 <div class="filter-container">
-    <div class="container-fluid">
+    <div class="container-fluid no-gutter">
         <div class="filters-button-group button-group clearfix">
             <fieldset>
                 {% for filter in site.filter %}
@@ -20,10 +20,10 @@
 
 <div class="content-container">
     <div class="container-fluid">
-        <div class="left-section-container col-md-2">
+        <div class="left-section-container col-lg-2 col-md-3">
             {% include home/filter.html %}
         </div>
-        <div class="right-section-container col-md-10">
+        <div class="right-section-container col-lg-10 col-md-9">
             {% include home/product-result.html %}
         </div>
     </div>
