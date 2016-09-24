@@ -51,7 +51,7 @@
     templates: {
       empty: [
         '<div class="empty">No Result Found</div>'].join('\n'),
-        suggestion: Handlebars.compile('<p style="padding:6px">{% raw %}<a href="{{ link }}">{{ name }}</a> {% endraw %}</p> ')
+        suggestion: Handlebars.compile('<p style="padding:6px" class="result-list">{% raw %}<a class="result-link" href="{{ link }}" target="_blank">{{ name }}</a> {% endraw %}</p> ')
     }
   });
 </script>
