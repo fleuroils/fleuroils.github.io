@@ -316,13 +316,11 @@ header
           padding: 0 25px
 
 //  Typeahead
-#scrollable-dropdown-menu .tt-dropdown-menu
-  max-height: 250px
-  overflow-y: auto
-
-.title, .example-name
-  font-family: Prociono
-
+#scrollable-dropdown-menu
+  float: right
+  .tt-dropdown-menu
+    max-height: 250px
+    overflow-y: auto
 p
   margin: 0 0 10px
 
@@ -344,13 +342,17 @@ p
 .typeahead, .tt-query, .tt-hint
   border: 2px solid #CCCCCC
   border-radius: 8px 8px 8px 8px
-  font-size: 24px
+  font-size: 16px
   height: 30px
   line-height: 30px
   outline: medium none
   padding: 8px 12px
   width: 396px
+  color: #a2db8e
 
+.tt-dataset-name a
+  font-size: 16px
+  color: #a2db8e !important
 .typeahead
   background-color: #FFFFFF
   &:focus
@@ -358,9 +360,8 @@ p
 
 .tt-query
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset
-
 .tt-hint
-  color: #999999
+  color: #a2db8e
 
 .tt-dropdown-menu
   background-color: #FFFFFF
@@ -376,7 +377,7 @@ p
   line-height: 24px
   padding: 3px 20px
   &.tt-cursor
-    background-color: #0097CF
+    background-color: transparent
     color: #FFFFFF
   p
     margin: 0
@@ -394,8 +395,6 @@ p
     font-style: italic
   .repo-name
     font-weight: bold
-  .repo-description
-    font-size: 14px
 
 .example-sports .league-name
   border-bottom: 1px solid #CCCCCC

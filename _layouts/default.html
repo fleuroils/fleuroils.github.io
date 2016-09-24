@@ -43,16 +43,15 @@
 
   $('.typeahead').typeahead({
     minLength: 0,
-    highlight: true
+    highlight: false
   }, {
     name: 'name',
     display: function(item){ return item.name},
     source: dataSource.ttAdapter(),
     templates: {
       empty: [
-        '<div class="empty">No Result Foundd</div>'].join('\n'),
+        '<div class="empty">No Result Found</div>'].join('\n'),
         suggestion: Handlebars.compile('<p style="padding:6px">{% raw %}<a href="{{ link }}">{{ name }}</a> {% endraw %}</p> ')
-
     }
   });
 </script>
