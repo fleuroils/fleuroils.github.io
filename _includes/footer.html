@@ -1,5 +1,5 @@
 <footer class="site-footer">
-  <div class="container-fluid">
+  <div class="container-fluid visible-lg hidden-md hidden-sm hidden-xs">
     <div class="left-section col-md-4">
       <span>TRADEX GROUP</span>
       <span>1359 Rutchey Str.</span>
@@ -9,6 +9,32 @@
       <img src="/img/footer-logo.png">
     </div>
     <div class="right-section col-md-4">
+      <ul>
+        {% for social-media in site.social-media %}
+        <li>
+          <a href="{{ social-media.link }}" target="_blank" class="social-media-list">
+            <img src="/img/social-media/{{ social-media.image }}"/>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="container-fluid hidden-lg visible-md visible-sm visible-xs">
+    <div class="middle-section col-md-4 col-sm-12 col-xs-12">
+      <img src="/img/footer-logo.png">
+    </div>
+
+    <div class="left-section col-md-4 col-sm-12 col-xs-12">
+      <div class="item-container">
+        <span>TRADEX GROUP</span>
+        <span>1359 Rutchey Str.</span>
+        <span>S. Ana, CA 92705 USA</span>
+      </div>
+    </div>
+
+    <div class="right-section col-md-4 col-sm-12 col-xs-12">
       <ul>
         {% for social-media in site.social-media %}
         <li>
