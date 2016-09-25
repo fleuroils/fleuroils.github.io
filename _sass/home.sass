@@ -223,7 +223,7 @@ header
     -o-transform: translateY(-50%)
     -ms-transform: translateY(-50%)
     .modal-dialog
-      width: 100% !important
+      width: 100%
       .modal-content
         .modal-header
           z-index: 5
@@ -675,6 +675,22 @@ p
         margin-left: auto
         margin-right: auto
         display: table
+
+  #about-modal
+    .container
+      .modal-dialog
+        width: auto
+        .modal-content
+          .modal-body
+            padding-top: 0
+            padding-bottom: 0
+  #contact-modal
+    .container
+      .modal-dialog
+        .modal-content
+          .modal-body
+            padding-top: 0
+            padding-bottom: 0
 
 @media (max-width: $screen-xs-max)
   header
