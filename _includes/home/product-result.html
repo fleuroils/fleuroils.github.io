@@ -8,6 +8,15 @@
             </div>
             <div class="col-lg-6 col-md-7 col-sm-7 col-xs-7 right-section">
                 <div class="product-details">
+                    {% if product.type != null %}
+                        {% if product.type == "new" %}
+                        <span class="product-type" style="background-color: #F2A77F">{{ product.type | upcase | replace: "-"," " }}</span>
+                        {% else %}
+                        <span class="product-type" style="background-color: #BAAADB">{{ product.type | upcase | replace: "-"," " }}</span>
+                        {% endif %}
+                    {% else %}
+                    <span class="product-type"></span>
+                    {% endif %}
                     <h6 class="product-price">{{ product.price }}</h6>
                     <h5 class="product-name">{{ product.name }}</h5>
                     <a class="product-link" href="{{ product.link }}" target="_blank">BUY NOW</a>
