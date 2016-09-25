@@ -152,9 +152,7 @@
       }
 
       // If the output string is empty, show all rather than none:
-
-      !self.outputString.length && (self.outputString = 'all');
-
+      !self.outputString.length && (self.outputString = $buttonFilter);
       console.log(self.outputString);
 
       // ^ we can check the console here to take a look at the filter string that is produced
