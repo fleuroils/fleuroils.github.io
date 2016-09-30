@@ -229,6 +229,7 @@ header
     -moz-transform: translateY(-50%)
     -o-transform: translateY(-50%)
     -ms-transform: translateY(-50%)
+    z-index: 1050
     .modal-dialog
       width: 100%
       .modal-content
@@ -299,13 +300,14 @@ header
                 padding: 25px 70px
                 border-radius: 50px
                 display: block
+
 .modal-backdrop.in
   opacity: 0.85
 
 //  On modal success message
 
 #modal-message
-  z-index: 1051
+
   .modal-dialog
     position: absolute
     top: 40%
@@ -322,6 +324,7 @@ header
     transition: all 0.3s ease
 
   &.in .modal-dialog
+    z-index: 1051
     margin-top: 0
     margin-bottom: 0
     position: absolute
@@ -512,6 +515,7 @@ p
       -webkit-transform: none
       -o-transform: none
       -ms-transform: none
+
       .modal-dialog
         .modal-content
           .modal-body
@@ -560,6 +564,7 @@ p
       height: 59px
       .filter
         padding: 20px 29px
+
   .md-content-container
     margin-top: 30px
     margin-bottom: 30px
@@ -595,7 +600,6 @@ p
           border-radius: 30px
           background-color: #EBEBEB
           display: block !important
-
           input
             max-width: 100%
             min-width: 0
@@ -619,21 +623,23 @@ p
               color: #585858
             &:-ms-input-placeholder
               color: #585858
+    .filter-section
+      .filters-button-group
+        .filter-btn
+          height: 40px
+          border: none
+          width: 100%
+          border-radius: 55px
+          background-color: #EBEBEB
 
-    .filters-button-group
-      .filter-btn
-        height: 40px
-        border: none
-        width: 100%
-        border-radius: 55px
-        background-color: #EBEBEB
-    .sort-button-group
-      #sort-btn
-        border: none
-        height: 40px
-        width: 100%
-        border-radius: 55px
-        background-color: #EBEBEB
+    .sort-section
+      .sort-button-group
+        .sort-btn
+          border: none
+          height: 40px
+          width: 100%
+          border-radius: 55px
+          background-color: #EBEBEB
 
     .content-container
       .right-section-container
@@ -641,6 +647,7 @@ p
           #Container
             .item-list
               height: 270px
+
 
 @media (max-width: $screen-sm-max)
   header
@@ -693,28 +700,6 @@ p
                 .product-name
                   min-height: 35px
 
-  #about-modal
-    .container
-      .modal-dialog
-        .modal-content
-          .modal-body
-            #about
-              .logo-section
-                img
-                  height: 100px
-              .description-section
-                padding: 40px 15px
-  #contact-modal
-    .container
-      .modal-dialog
-        .modal-content
-          .modal-body
-            #contact
-              .logo-section
-                img
-                  height: 100px
-
-
   .site-footer
     padding-top: 50px
     padding-bottom: 50px
@@ -747,13 +732,30 @@ p
           .modal-body
             padding-top: 0
             padding-bottom: 0
+            #about
+              .logo-section
+                img
+                  height: 100px
+              .description-section
+                padding: 40px 15px
+
+
   #contact-modal
     .container
+      top: 50%
+      transform: translateY(-50%)
+      -webkit-transform: translateY(-50%)
+      -o-transform: translateY(-50%)
+      -ms-transform: translateY(-50%)
       .modal-dialog
         .modal-content
           .modal-body
             padding-top: 0
             padding-bottom: 0
+            #contact
+              .logo-section
+                img
+                  height: 100px
 
 @media (max-width: $screen-xs-max)
   header
@@ -762,6 +764,21 @@ p
     #navbar-right-collapse
       .navbar-right
         float: right
+
+  #contact-modal
+    padding-left: 0
+    padding-right: 0
+    .container
+      padding-left: 0
+      padding-right: 0
+      top: 0
+      transform: none
+      -moz-transform: none
+      -ms-transform: none
+      -o-transform: none
+      .modal-dialog
+        margin: 20px
+        width: auto
 
   .filter-container
     margin-left: 10px
@@ -830,6 +847,7 @@ p
                 .product-link
                   font-size: 12px
 
+
   .site-footer
     .middle-section
       img
@@ -853,18 +871,9 @@ p
             right: -8px
 
   #contact-modal
-    padding-left: 0
-    padding-right: 0
     .container
-      padding-left: 0
-      padding-right: 0
-      top: 0
-      transform: none
-      -moz-transform: none
-      -ms-transform: none
-      -o-transform: none
       .modal-dialog
-        width: auto
+        margin: 10px
         .modal-content
           .modal-header
             top: -8px
