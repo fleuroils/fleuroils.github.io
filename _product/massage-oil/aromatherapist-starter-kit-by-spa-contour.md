@@ -1,5 +1,6 @@
 ---
 
+rank: 48 
 category: "massage-oil"
 name: "Aromatherapist Starter Kit by Spa Contour"
 price: "$13.95"

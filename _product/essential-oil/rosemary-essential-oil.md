@@ -1,5 +1,6 @@
 ---
 
+rank: 19 
 category: "essential-oil"
 name: "Rosemary Essential Oil"
 price: "$3.90"

@@ -1,5 +1,6 @@
 ---
 
+rank: 38 
 category: "massage-oil"
 name: "Spa Contour Grapeseed Unscented Massage Oil - 16 oz"
 price: "$7.50"

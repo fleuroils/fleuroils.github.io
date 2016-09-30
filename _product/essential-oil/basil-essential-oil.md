@@ -1,5 +1,6 @@
 ---
 
+rank: 1 
 category: "essential-oil"
 name: "Basil Essential Oil"
 price: "$3.00"

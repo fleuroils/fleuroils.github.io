@@ -1,5 +1,6 @@
 ---
 
+rank: 40 
 category: "massage-oil"
 name: "Spa Contour Illuminant (Lemongrass) Massage Oil - 16 oz"
 price: "$8.50"

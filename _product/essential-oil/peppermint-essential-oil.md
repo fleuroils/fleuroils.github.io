@@ -1,5 +1,6 @@
 ---
 
+rank: 17 
 category: "essential-oil"
 name: "Peppermint Essential Oil"
 price: "$3.00"

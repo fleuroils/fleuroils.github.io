@@ -1,5 +1,6 @@
 ---
 
+rank: 42 
 category: "massage-oil"
 name: "Spa Contour Jardin de Rose Massage Oil - 16 oz"
 price: "$8.50"

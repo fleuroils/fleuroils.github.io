@@ -10,54 +10,54 @@ sass:
     style: compressed
 
 filter:
-  - id: 1
+  - rank: 1
     name: "Essential Oils"
     filter: "essential-oil"
 
-  - id: 2
+  - rank: 2
     name: "Synergies"
     filter: "synergy"
 
-  - id: 3
+  - rank: 3
     name: "Floral Waters"
     filter: "floral-water"
 
-  - id: 4
+  - rank: 4
     name: "Massage Oils"
     filter: "massage-oil"
 
-  - id: 5
+  - rank: 5
     name: "Candles & Soaps"
     filter: "soap"
 
-  - id: 6
+  - rank: 6
     name: "Diffusers"
     filter: "diffuser"
 
 
 
 product-category:
-  - id: 1
+  - rank: 1
     name: "Essential Oils"
     link: "esential-oil"
 
-  - id: 2
+  - rank: 2
     name: "Synergies"
     link: "synergies"
 
-  - id: 3
+  - rank: 3
     name: "Floral Waters"
     link: "floral-water"
 
-  - id: 4
+  - rank: 4
     name: "Massage Oils"
     link: "massage-oil"
 
-  - id: 5
+  - rank: 5
     name: "Candles & Soaps"
     link: "candle-soap"
 
-  - id: 6
+  - rank: 6
     name: "Diffusers"
     link: "diffuser"
 

@@ -1,5 +1,6 @@
 ---
 
+rank: 3 
 category: "essential-oil"
 name: "Chamomile Roman Essential Oil "
 price: "$6.50"

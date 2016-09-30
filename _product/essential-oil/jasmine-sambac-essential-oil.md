@@ -1,5 +1,6 @@
 ---
 
+rank: 8 
 category: "essential-oil"
 name: "Jasmine Sambac Essential Oil"
 price: "$8.00"

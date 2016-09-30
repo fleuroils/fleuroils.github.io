@@ -1,5 +1,6 @@
 ---
 
+rank: 6 
 category: "essential-oil"
 name: "Geranium Essential Oil"
 price: "$5.00"

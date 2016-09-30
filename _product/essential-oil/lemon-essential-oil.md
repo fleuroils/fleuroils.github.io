@@ -1,5 +1,6 @@
 ---
 
+rank: 11 
 category: "essential-oil"
 name: "Lemon Essential Oil"
 price: "$3.85"

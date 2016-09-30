@@ -1,5 +1,6 @@
 ---
 
+rank: 34 
 category: "massage-oil"
 name: "Spa Contour Clarte (Lavender and Grapefruit) Massage Oil - 16 oz"
 price: "$8.50"

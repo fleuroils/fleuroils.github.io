@@ -1,5 +1,6 @@
 ---
 
+rank: 20 
 category: "essential-oil"
 name: "Rosewood Essential Oil"
 price: "$6.00"

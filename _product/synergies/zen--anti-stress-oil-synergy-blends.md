@@ -1,5 +1,6 @@
 ---
 
+rank: 28 
 category: "synergy"
 name: "Zen / Anti-Stress Oil Synergy (Blends)"
 price: "$5.00"

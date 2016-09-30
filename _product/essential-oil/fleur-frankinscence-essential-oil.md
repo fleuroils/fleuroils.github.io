@@ -1,5 +1,6 @@
 ---
 
+rank: 5 
 category: "essential-oil"
 name: "Fleur Frankinscence Essential Oil"
 price: "$7.00"

@@ -1,5 +1,6 @@
 ---
 
+rank: 16 
 category: "essential-oil"
 name: "Patchouli Essential Oil"
 price: "$6.50"

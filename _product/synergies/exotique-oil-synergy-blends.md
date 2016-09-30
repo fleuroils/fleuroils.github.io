@@ -1,5 +1,6 @@
 ---
 
+rank: 27 
 category: "synergy"
 name: "Exotique Oil Synergy (Blends)"
 price: "$5.75"

@@ -22,10 +22,13 @@ dir.eachFileRecurse (FileType.FILES) { csvFile ->
         productList << product
     }
 
-        String category = "synergy"
+        String category = "massage-oil"
+        int counter = 32;
 
         productList.eachWithIndex { product, index ->
         "mkdir -p out/".execute()
+
+        counter = counter+1
 
         File file = new File("out/" + slugify(product.productName) +'.md')
 
@@ -34,6 +37,7 @@ dir.eachFileRecurse (FileType.FILES) { csvFile ->
 
 //        file << "slugID: $counter \n"
         file << "\n"
+        file << "rank: $counter \n"
         file << "category: \"$category\"\n"
         file << "name: \"$product.productName\"\n"
         file << "price: \"$product.price\"\n"

@@ -1,5 +1,6 @@
 ---
 
+rank: 26 
 category: "synergy"
 name: "Calmante Oil Synergy (Blends)"
 price: "$4.80"

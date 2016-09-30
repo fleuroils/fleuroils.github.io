@@ -1,5 +1,6 @@
 ---
 
+rank: 15 
 category: "essential-oil"
 name: "Orange Essential Oil"
 price: "$2.50"

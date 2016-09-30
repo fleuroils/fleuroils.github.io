@@ -1,5 +1,6 @@
 ---
 
+rank: 18 
 category: "essential-oil"
 name: "Rose Essential Oil"
 price: "$6.00"

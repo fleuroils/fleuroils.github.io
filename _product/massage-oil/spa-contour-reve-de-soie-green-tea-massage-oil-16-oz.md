@@ -1,5 +1,6 @@
 ---
 
+rank: 46 
 category: "massage-oil"
 name: "Spa Contour Reve de Soie (Green Tea) Massage Oil - 16 oz"
 price: "$8.50"
